@@ -3,7 +3,7 @@ layout: default
 current: home
 class: 'home-template'
 navigation: True
-permalink: https://raulcoroban.github.io/Doxio/
+permalink: permalink: https://raulcoroban.github.io/Doxio/projects.html
 ---
 
 <!-- < default -->
@@ -15,8 +15,9 @@ into the {body} of the default.hbs template -->
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
-                Doxio's Projects
+                Projects
             </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
         </div>
         {% include site-nav.html %}
     </div>
