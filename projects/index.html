@@ -13,7 +13,10 @@ into the {body} of the default.hbs template -->
 <header class="site-header outer {% if page.cover or site.cover %}">
     <div class="inner">
         <div class="site-header-content">
-            <h1 class="site-description">Projects</h1>
+            <h1 class="site-title">
+                {{ site.title }}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
         </div>
         {% include site-nav.html %}
     </div>
