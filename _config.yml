@@ -26,8 +26,8 @@ twitter: RCoroban # replace by your username
 facebook: raul.coroban.96 # replace by your username
 
 # Disqus
-disqus: False
-disqus_shortname: jekyller # replace with your disqus username
+#disqus: False
+#disqus_shortname: jekyller # replace with your disqus username
 
 # Google Analytics
 google_analytics: UA-123993659-1 # replace with your GA tracking identifier
@@ -44,7 +44,7 @@ permalink: /:title
 plugins: [jekyll-paginate, jekyll-feed]
 
 feed:
-  path: atom.xml
+  path: feed.xml
 
 collections:
   category:
@@ -70,7 +70,7 @@ collections:
 safe: False
 lsi: False
 username: RaulCoroban
-repo: jasper2
+repo: Doxio
 branch: master
 relative_source: ../Doxio/
 destination: ../Doxio-pages/
