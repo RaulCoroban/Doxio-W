@@ -1,5 +1,6 @@
 ---
 layout: post
+category: work
 current: post
 cover: assets/images/water.jpg
 navigation: True
