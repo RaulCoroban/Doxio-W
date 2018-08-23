@@ -46,6 +46,9 @@ plugins: [jekyll-paginate, jekyll-feed]
 feed:
   path: atom.xml
 
+collections:
+  category:
+    output: true
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)
 # Author's page cover in _layouts/author.html
