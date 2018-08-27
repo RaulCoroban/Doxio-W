@@ -445,6 +445,7 @@ h1 {
 h2 {
     margin: 1.5em 0 0.5em 0;
     font-size: 2rem;
+    color: #95a5a6;
 }
 @media (max-width: 500px) {
     h2 {
