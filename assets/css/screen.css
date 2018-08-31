@@ -60,7 +60,7 @@ body {
 .site-main {
     z-index: 100;
     flex-grow: 1;
-    background: #ffffff;
+    background: #000000;
 }
 
 /* Full width page blocks */
