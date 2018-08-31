@@ -29,7 +29,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #000000;
+    background: #f4f8fb;
 }
 
 .img {
@@ -60,6 +60,7 @@ body {
 .site-main {
     z-index: 100;
     flex-grow: 1;
+    background: #ffffff;
 }
 
 /* Full width page blocks */
