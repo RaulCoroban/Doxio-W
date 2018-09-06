@@ -114,11 +114,6 @@ body {
     background-size: cover;
 }
 
-.site-header.no-cover:before,
-.site-header.no-cover:after {
-    display: none;
-}
-
 .site-header-content {
     display: flex;
     flex-direction: column;
