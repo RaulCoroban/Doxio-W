@@ -27,7 +27,7 @@ into the {body} of the default.hbs template -->
     <div class="inner">
         <div class="post-feed">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {% for post in {{site.url}}paginator.posts %}
+            {% for post in {{site.url}}work/paginator.posts %}
                 {% if post.categories contains 'work' %}
                     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
                         {% if post.cover %}
