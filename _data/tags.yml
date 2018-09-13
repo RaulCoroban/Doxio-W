@@ -1,20 +1,20 @@
-Acm:
+acm:
   name: Acm
   description: The greatest computer science association.
   cover: assets/images/tags/acmtag.jpg
-Mobile app:
+mobile-app:
   name: Mobile App
   description: Designs crafted for mobile platforms.
   cover: assets/images/tags/mobiletag.jpg
-iOS:
+ios:
   name: iOS
   description: Beauty for Cupertino's devices.
   cover: assets/images/tags/iOStag.jpg
-Android:
+android:
   name: Android
   description: Google tailored apps.
   cover: assets/images/tags/androidtag.jpg
-Web:
+web:
   name: Web
   description: False
   cover: assets/images/tags/androidtag.jpg
