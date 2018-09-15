@@ -14,11 +14,7 @@ into the {body} of the default.hbs template -->
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
-                {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}assets/images/logo-projects.png" alt="{{ site.title }}"/>
-                {% else %}
-                    {{ site.title }}
-                {% endif %}
+                Series
             </h1>
             <h2 class="site-description">Personal designs and concepts</h2>
         </div>
@@ -32,7 +28,7 @@ into the {body} of the default.hbs template -->
         <div class="post-feed">
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {% for post in site.posts %}
-                {% if post.categories contains 'projects' %}
+                {% if post.categories contains 'series' %}
                     <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
                         {% if post.cover %}
                             <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
