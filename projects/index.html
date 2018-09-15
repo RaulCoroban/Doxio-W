@@ -10,14 +10,14 @@ navigation: True
 into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}assets/images/work.jpg) {% else %}no-cover{% endif %}">
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}assets/images/projects.jpg) {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
                 {% if site.logo %}
-                    <img class="site-logo" src="{{ site.baseurl }}/assets/images/logo-work.png" alt="{{ site.title }}"/>
+                    <img class="site-logo" src="{{ site.baseurl }}/assets/images/logo-projects.png" alt="{{ site.title }}"/>
                 {% else %}
-                    Work
+                    {{ site.title }}
                 {% endif %}
             </h1>
             <h2 class="site-description">Projects developed for clients</h2>
