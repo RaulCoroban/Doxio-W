@@ -26,19 +26,21 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
         <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {% for post in site.posts %}
-                {% if post.categories contains 'series' %}
-                    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
-                        {% if post.cover %}
-                            <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
-                                <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
-                            </a>
-                        {% endif %}
-                    </article>
-                {% endif %}
-            {% endfor %}
-
+            <article class="post-card home-template">
+                <a class="post-card-image-link" href="/Doxio/trainest">
+                    <div class="post-card-image" style="background-image: url(/Doxio/assets/images/covers/trainestcover.jpg)"></div>
+                </a>
+            </article>
+            <article class="post-card home-template">
+                <a class="post-card-image-link" href="/Doxio/trainest">
+                    <div class="post-card-image" style="background-image: url(/Doxio/assets/images/covers/trainestcover.jpg)"></div>
+                </a>
+            </article>
+            <article class="post-card home-template">
+                <a class="post-card-image-link" href="/Doxio/trainest">
+                    <div class="post-card-image" style="background-image: url(/Doxio/assets/images/covers/trainestcover.jpg)"></div>
+                </a>
+            </article>
         </div>
 
     </div>
