@@ -1,17 +1,19 @@
 ---
 layout: page
 current: about
-title: About
+title: About Me
 navigation: true
 logo: 'assets/images/ghost.png'
 class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+First things first. <i>Doxio</i> is the pseudoname that came to me a long time ago. (If you ask, I might not even be able to answer you from where). My name is Raul Coroban.
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
+Currently, I am a Bioinformatics and Systems Biology MSc student at [Vrije Universiteit](https://www.vu.nl/en). "Ok, then why..." Am I doing this? Yeah, well, it's a long story.
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+I started my 4-years Computer Science BSc at the [Polytechnic University of Valencia](http://www.upv.es/) and I specialized on Software Engineering. During this time, I developed all the design skills of a UX/UI designer (in paralell with my studies) enriched with the [Agile](https://en.wikipedia.org/wiki/Agile_software_development) perspective which have been applied to the developed projects.
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+As an active member of the [ACM UPV Chapter](https://acmupv.webs.upv.es) in charge of the promotion of our chapter and activities, I've also acquired some skills on Graphic design, besides other soft skills derived of the association management.
+
+Thank you for your time!
