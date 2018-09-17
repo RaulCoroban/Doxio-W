@@ -8,8 +8,6 @@ class: page-template
 subclass: 'post page'
 ---
 
-![About Me Image](/images/logo.png)
-
 First things first. <i>Doxio</i> is the pseudoname that came to me a long time ago. (If you ask, I might not even be able to answer you from where). My name is Raul Coroban.
 
 Currently, I am a Bioinformatics and Systems Biology MSc student at [Vrije Universiteit](https://www.vu.nl/en). "Ok, then why..." Am I doing this? Yeah, well, it's a long story.
