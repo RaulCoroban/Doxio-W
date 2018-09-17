@@ -1,6 +1,6 @@
 ---
 layout: normal
-current: work
+current: projects
 class: 'home-template'
 navigation: True
 ---
@@ -10,13 +10,17 @@ navigation: True
 into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}assets/images/series.jpg) {% else %}no-cover{% endif %}">
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}assets/images/designs.jpeg) {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
-                Designs
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}assets/images/logo-projects.png" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
             </h1>
-            <h2 class="site-description">A collection of mini projects</h2>
+            <h2 class="site-description">Personal designs and concepts</h2>
         </div>
         {% include site-nav.html %}
     </div>
@@ -26,11 +30,41 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
         <div class="post-feed">
-            <article class="post-card home-template">
-                <a class="post-card-image-link" href="/Doxio/trainest">
-                    <div class="post-card-image" style="background-image: url(/Doxio/assets/images/series/SHARE.jpg)"></div>
-                </a>
-            </article>
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {% for post in site.posts %}
+                {% if post.categories contains 'designs' %}
+                    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+                        {% if post.cover %}
+                            <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
+                                <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
+                            </a>
+                        {% endif %}
+                        <div class="post-card-content">
+                            <a class="post-card-content-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
+                                <header class="post-card-header">
+                                    {% if post.tags.size > 0 %}
+                                    <span class="post-card-tags">
+                                        {% for tag in post.tags %}
+                                            {% if forloop.index == post.tags.size %}
+                                                {{ tag | capitalize }} </span>
+                                            {% else %}
+                                               {{ tag | capitalize }} &middot;
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+
+                                    <h2 class="post-card-title">{{ post.title }}</h2>
+                                </header>
+                                <section class="post-card-excerpt">
+                                    <p>{{ post.content | strip_html | truncatewords: 40, "..." }}</p>
+                                </section>
+                            </a>
+                
+                        </div>
+                    </article>
+                {% endif %}
+            {% endfor %}
+
         </div>
 
     </div>
