@@ -29,7 +29,7 @@ into the {body} of the default.hbs template -->
             <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
             {% for post in site.posts %}
                 {% if post.categories contains 'projects' %}
-                    <article class="post-card {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
+                    <article class="post-card-project {{ page.class }}{% unless post.cover %} no-image{% endunless %}">
                         {% if post.cover %}
                             <a class="post-card-image-link" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">
                                 <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ post.cover }})"></div>
@@ -55,7 +55,7 @@ into the {body} of the default.hbs template -->
                                     <p>{{ post.content | strip_html | truncatewords: 40, "..." }}</p>
                                 </section>
                             </a>
-                
+
                         </div>
                     </article>
                 {% endif %}
