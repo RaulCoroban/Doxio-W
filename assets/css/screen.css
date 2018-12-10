@@ -85,7 +85,7 @@ body {
 .outer {
     position: relative;
     padding: 0 4vw;
-    background: rgb(0,0,0,0.05)
+    background: #fff;
 }
 
 /* Centered content container blocks */
@@ -136,7 +136,7 @@ body {
 
 .site-header-small {
     position: relative;
-    padding-top: 12px;
+    padding-top: 50px;
     padding-bottom: 12px;
     color: #fff;
     background: #fff;
@@ -434,6 +434,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card {
     display: flex;
+    flex: 1 1 300px;
     flex-direction: column;
     overflow: hidden;
     margin: 0 20px 40px;
