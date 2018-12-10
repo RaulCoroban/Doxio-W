@@ -130,7 +130,7 @@ body {
     padding-top: 100px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: #f2f2f2;
     background-size: cover;
 }
 
@@ -139,7 +139,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: #f2f2f2;
     background-size: cover;
 }
 
