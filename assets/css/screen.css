@@ -169,6 +169,7 @@ body {
 .site-header.no-cover:before,
 .site-header.no-cover:after {
     display: none;
+    background: #f2f2f2;
 }
 
 .site-header-content {
