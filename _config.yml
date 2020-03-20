@@ -8,8 +8,8 @@ language: 'en-uk'
 baseurl: /Doxio/
 
 # Website info
-title: Dox.io's Portfolio
-description: UX/UI Designer - Online Portfolio
+title: Dox.io - Writing
+description: Words - Library
 cover: assets/images/blog-cover.jpg
 logo: assets/images/logo-doxio.png
 logo_dark: assets/images/dark-logo-doxio.png
@@ -30,7 +30,7 @@ facebook: raul.coroban.96 # replace by your username
 #disqus_shortname: jekyller # replace with your disqus username
 
 # Google Analytics
-google_analytics: UA-123993659-1 # replace with your GA tracking identifier
+google_analytics: UA-161444391-1 # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
@@ -72,10 +72,10 @@ lsi: False
 username: RaulCoroban
 repo: Doxio
 branch: master
-relative_source: ../Doxio/
+relative_source: ../Doxio-W/
 destination: ../Doxio-pages/
-production_url:  https://raulcoroban.github.io/Doxio/
-source_url:  https://github.com/RaulCoroban/Doxio/
+production_url:  https://raulcoroban.github.io/Doxio-W/
+source_url:  https://github.com/RaulCoroban/Doxio-W/
 
 exclude:
   - node_modules
