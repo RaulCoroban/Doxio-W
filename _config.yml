@@ -9,7 +9,7 @@ baseurl: /Doxio/
 
 # Website info
 title: Dox.io - Writing
-description: Words - Library
+description: Own Words - Library
 cover: assets/images/blog-cover.jpg
 logo: assets/images/logo-doxio.png
 logo_dark: assets/images/dark-logo-doxio.png
@@ -73,7 +73,7 @@ username: RaulCoroban
 repo: Doxio
 branch: master
 relative_source: ../Doxio-W/
-destination: ../Doxio-pages/
+destination: ../Doxio-W-pages/
 production_url:  https://raulcoroban.github.io/Doxio-W/
 source_url:  https://github.com/RaulCoroban/Doxio-W/
 
